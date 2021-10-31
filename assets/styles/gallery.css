@@ -1,0 +1,375 @@
+@media screen and (min-width: 1023px) {
+
+    .wrapper {
+        padding: 2% 7% 2% 6%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 62px;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 62px;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-content: space-around;
+    }
+
+    .block-text {
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        margin: 25%;
+    }
+
+    .holder1,
+    .holder2,
+    .holder3,
+    .holder4,
+    .holder5,
+    .holder6,
+    .holder7,
+    .holder8,
+    .holder9,
+    .holder10 {
+        position: relative;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 5px;
+        display: none;
+    }
+
+    .holder1:hover .block1,
+    .holder2:hover .block2,
+    .holder3:hover .block3,
+    .holder4:hover .block4,
+    .holder5:hover .block5,
+    .holder6:hover .block6,
+    .holder7:hover .block7,
+    .holder8:hover .block8,
+    .holder9:hover .block9,
+    .holder10:hover .block10 {
+        display: block;
+    }
+
+    p {
+        font-family: 'Conv_TTHoves-Medium';
+        color: #333333;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+
+    .page {
+        display: flex;
+        margin-top: 4em;
+    }
+
+    .gallery_pager {
+        font-size: 24px;
+    }
+
+    .gallery_pager_num {
+        font-family: 'Conv_TTHoves-Light';
+        margin-top: 10px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        margin-left: 23px;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input+label {
+        display: block;
+        height: 45vh;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    input:checked+label {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(10, 10, 10, .9);
+        background-size: 30%;
+        z-index: 99999;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        padding: 2% 2% 7% 7%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 2em;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        align-content: space-around;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        visibility: hidden;
+    }
+
+    img {
+        padding-left: 40px;
+    }
+
+    .page {
+        display: flex;
+        margin-top: 4em;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+
+    .gallery_pager {
+        font-family: 'Conv_TTHoves-Light';
+        color: rgba(16, 16, 17, 0.637);
+        font-size: 24px;
+        margin: 30px 40px 30px 70px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: rgba(51, 51, 51, 0.664);
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 800;
+        margin: 30px 10px 20px 30px;
+    }
+
+    .gallery_pager_num {
+        font-family: 'Conv_TTHoves-Light';
+        margin-top: 10px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input+label {
+        display: block;
+        height: 55vh;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    input:checked+label {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(10, 10, 10, .9);
+        background-size: 40%;
+        z-index: 99999;
+    }
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        padding: 2% 7% 3% 7%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 2em;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        align-content: space-around;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        visibility: hidden;
+    }
+
+    img {
+        padding-left: 40px;
+    }
+
+    .page {
+        display: flex;
+        margin-top: 4em;
+    }
+
+    .gallery_pager {
+        font-family: 'Conv_TTHoves-Light';
+        color: rgba(16, 16, 17, 0.637);
+        font-size: 24px;
+        margin: 30px 40px 30px 70px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: rgba(51, 51, 51, 0.664);
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 800;
+        margin: 30px 10px 20px 30px;
+    }
+
+    .gallery_pager_num {
+        font-family: 'Conv_TTHoves-Light';
+        margin-top: 10px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input+label {
+        display: block;
+        height: 55vh;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    input:checked+label {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(10, 10, 10, .9);
+        background-size: 60%;
+        z-index: 99999;
+    }
+}

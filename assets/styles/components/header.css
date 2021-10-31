@@ -1,0 +1,491 @@
+@media screen and (min-width: 1023px) {
+    .block-header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 7fr 1fr;
+        height: 8em;
+    }
+
+    .block-header__logo {
+        grid-column: 2/3;
+        align-items: center;
+        justify-items: left;
+    }
+
+    .block-header__logo-image {
+        margin: 0.5em;
+        width: 8vw;
+        height: 5vw;
+        transform: translateY(50%);
+    }
+
+    .block-header__navbar {
+        grid-column: 3/4;
+        justify-items: start;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    .block-header__navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 4em 0em 4em 0em;
+    }
+
+    .block-header__navbar-menu a {
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgb(51, 51, 51);
+        line-height: 12px;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+
+    }
+
+    .block-header__navbar-menu a:hover {
+        transition: all 1s ease;
+        border-bottom: 1px solid rgb(51, 51, 51);
+        border-top: 1px solid rgb(51, 51, 51)
+    }
+
+    .font-tt-Hoves {
+        font-family: 'TT Hoves', Arial;
+        text-transform: uppercase;
+        font-size: 0.9vw;
+        letter-spacing: 2px;
+
+    }
+
+    .block-header__slider {
+        display: grid;
+        grid-template-columns: 1fr 3fr 7fr 1fr;
+    }
+
+    .block-header__carousel-txt {
+        display: grid;
+        grid-column: 2/3;
+        align-items: center;
+        grid-template-rows: 45% 55%;
+    }
+
+
+    .block-header__carousel-txt-title {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .block-header__carousel-txt-title__poject {
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Conv_TTHoves-Hairline', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vw;
+    }
+
+    .block-header__carousel-txt-title__nurtown {
+        align-items: flex-start;
+        margin: 0px;
+        color: rgba(51, 51, 51, 1);
+        font-family: 'Conv_TT Hoves-Bold', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5vw;
+    }
+
+    .block-header__slider-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        grid-column: 3/4;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .block-header__slider-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-size: cover;
+        object-position: center;
+        width: 58vw;
+        height: 100%;
+    }
+
+    .block-header__slider-img__button {
+        grid-column: 1 / 2;
+        grid-row: -2 / -1;
+        background-color: #FFFFFF;
+    }
+
+    .block-header__slider-img__button_project {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 1vw;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .block-header__slider-img__button_project:hover {
+        transition: all 0.6s ease;
+        background-color: rgb(235, 237, 240);
+    }
+
+    .button-txt {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: 'TT Hoves', Arial, serif;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 7fr 1fr;
+        height: 6em;
+    }
+
+    .block-header__logo {
+        grid-column: 2/3;
+        align-items: center;
+        justify-items: left;
+    }
+
+    .block-header__logo-image {
+        margin: 0.5em;
+        width: 8vw;
+        height: 5vw;
+        transform: translateY(50%);
+    }
+
+    .block-header__navbar {
+        grid-column: 3/4;
+        justify-items: start;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    .block-header__navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 4em 0em 4em 0em;
+    }
+
+    .block-header__navbar-menu a {
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgb(51, 51, 51);
+        line-height: 12px;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .block-header__navbar-menu a:hover {
+        transition: all 1s ease;
+        border-bottom: 1px solid rgb(51, 51, 51);
+        border-top: 1px solid rgb(51, 51, 51)
+    }
+
+    .font-tt-Hoves {
+        font-family: 'TT Hoves', Arial;
+        text-transform: uppercase;
+        font-size: 1.2vw;
+        letter-spacing: 2px;
+    }
+
+    .block-header__slider {
+        display: grid;
+        grid-template-columns: 1fr 3fr 7fr 1fr;
+    }
+
+    .block-header__carousel-txt {
+        display: grid;
+        grid-column: 2/3;
+        align-items: center;
+        grid-template-rows: 45% 55%;
+    }
+
+    .block-header__carousel-txt-title {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .block-header__carousel-txt-title__poject {
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Conv_TTHoves-Hairline', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vw;
+    }
+
+    .block-header__carousel-txt-title__nurtown {
+        align-items: flex-start;
+        margin: 0px;
+        color: rgba(51, 51, 51, 1);
+        font-family: 'Conv_TT Hoves-Bold', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5vw;
+    }
+
+
+    .block-header__slider-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        grid-column: 3/4;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .block-header__slider-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-size: cover;
+        object-position: center;
+        width: 58vw;
+        height: 100%;
+    }
+
+    .block-header__slider-img__button {
+        grid-column: 1 / 2;
+        grid-row: -2 / -1;
+        background-color: #FFFFFF;
+    }
+
+    .block-header__slider-img__button_project {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 1vw;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .block-header__slider-img__button_project:hover {
+        transition: all 0.6s ease;
+        background-color: rgb(235, 237, 240);
+    }
+
+    .button-txt {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: 'TT Hoves', Arial, serif;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 767px) {
+
+    .block-header {
+        display: grid;
+        grid-template-columns: 4fr 7fr 1fr;
+    }
+
+    .block-header__logo {
+        display: grid;
+        align-items: center;
+    }
+
+    .block-header__logo-image {
+        grid-column: 2/3;
+        margin: 0.5em;
+        min-width: 10vw;
+        max-width: 15vw;
+    }
+
+    .block-header__navbar {
+        grid-column: 2/3;
+        align-items: center;
+        gap: 2vw;
+        list-style-type: none;
+        padding-left: 0em;
+    }
+
+    .block-header__navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 3em 0em 1.5em 0em;
+    }
+
+    .block-header__navbar-menu a {
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgb(51, 51, 51);
+        line-height: 12px;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .block-header__navbar-menu a:hover {
+        transition: all 1s ease;
+        border-bottom: 1px solid rgb(51, 51, 51);
+        border-top: 1px solid rgb(51, 51, 51)
+    }
+
+    .font-tt-Hoves {
+        font-family: 'TT Hoves', Arial;
+        text-transform: uppercase;
+        font-size: 1.8vw;
+
+    }
+
+    .block-header__slider {
+        display: grid;
+        grid-template-columns: 4fr 7fr 1fr;
+
+    }
+
+    .block-header__carousel-txt {
+        display: grid;
+        grid-column: 1/2;
+        align-items: center;
+        grid-template-rows: 45% 55%;
+    }
+
+
+    .block-header__carousel-txt-title {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .block-header__carousel-txt-title__poject {
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Conv_TTHoves-Hairline', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vw;
+    }
+
+    .block-header__carousel-txt-title__nurtown {
+        align-items: flex-start;
+        margin: 0px;
+        color: rgba(51, 51, 51, 1);
+        font-family: 'Conv_TT Hoves-Bold', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5vw;
+
+    }
+
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 3vw;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+
+    .block-header__slider-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column: 2/3;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .block-header__slider-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-size: cover;
+        object-position: center;
+        width: 58vw;
+        height: 100%;
+    }
+
+    .block-header__slider-img__button {
+        grid-column: 1 / 2;
+        grid-row: -2 / -1;
+        background-color: #FFFFFF;
+
+    }
+
+    .block-header__slider-img__button_project {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 1.7vw;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .block-header__slider-img__button_project:hover {
+        transition: all 0.6s ease;
+        background-color: rgb(235, 237, 240);
+    }
+
+
+    .button-txt {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: 'TT Hoves', Arial, serif;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+}
